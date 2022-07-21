@@ -9,16 +9,17 @@ package p1;
  *
  * @author reroes
  */
-public class MatriculaJardin {
-    private double tarifa;
-    
-        
-    public void establecerTarifa(){
+public class MatriculaJardin extends Matricula{
+   @Override
+    public void establecerTarifa() {
         // tarifa = costo desayunos + costo libros + costo paseos
         tarifa = 50.2 + 140.2 + 40;
     }
-        
-    public double obtenerTarifa(){
-        return tarifa;
+
+    @Override
+    public String toString() {
+        String cadena = String.format("Transporte Matricula Jardin: "
+                + "%.2f\n", tarifa);
+        return cadena;
     }
 }

@@ -61,6 +61,4 @@ public class Televisor {
                 obtenerMarca(),
                 obtenerPrecio());
     }
-    
-    
 }
