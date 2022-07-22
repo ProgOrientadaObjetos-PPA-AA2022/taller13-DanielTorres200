@@ -11,7 +11,6 @@ package p1;
  */
 public class MatriculaCampamento extends Matricula {
 
-    @Override
     public void establecerTarifa() {
         // tarifa = costo transporte + costo comida + costo instructores
         tarifa = 100.2 + 30.2 + 90.2;
@@ -19,8 +18,8 @@ public class MatriculaCampamento extends Matricula {
 
     @Override
     public String toString() {
-        String cadena = String.format("Transporte Matricula Campamento: "
-                + "%.2f\n", tarifa);
+        String cadena = String.format("Matricula Campamento\n" + "Tarifa: %.2f\n",
+                obtenerTarifa());
         return cadena;
     }
 

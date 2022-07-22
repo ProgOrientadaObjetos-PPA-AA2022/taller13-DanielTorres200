@@ -7,12 +7,12 @@ package p3;
 
 /**
  *
- * @author reroes
+ * @author spart
  */
-public class DominioGmail implements Dominio {
+public class DominioGobierno implements Dominio {
 
     private String dominio;
-    
+
     @Override
     public void establecerDominio(String g) {
         dominio = g;

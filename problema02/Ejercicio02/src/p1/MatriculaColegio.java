@@ -10,7 +10,7 @@ package p1;
  * @author reroes
  */
 public class MatriculaColegio extends Matricula{
-    @Override
+   
     public void establecerTarifa() {
         // tarifa = costo deportes + costo folletos + 
         //          costo uniformes + costo laboratorios
@@ -19,8 +19,8 @@ public class MatriculaColegio extends Matricula{
 
     @Override
     public String toString() {
-        String cadena = String.format("Transporte Matricula Colegio: "
-                + "%.2f\n", tarifa);
+        String cadena = String.format("Matricula Colegio\n" + "Tarifa: %.2f\n",
+                obtenerTarifa());
         return cadena;
     }
 }
